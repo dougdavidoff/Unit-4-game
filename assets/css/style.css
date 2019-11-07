@@ -1,0 +1,13 @@
+.gem {
+    width: 150px;
+    margin-top: 600px;
+} 
+body {
+    background-image: url("https://www.kiplinger.com/slideshow/saving/T005-S001-things-you-ll-regret-keeping-in-a-safe-deposit-box/images/intro.jpg");
+    background-size: cover;
+}
+.main-hed {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 72pt;
+    text-align: center;
+}

@@ -7,14 +7,35 @@
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <title>Don't Break The Bank</title>
 </head>
 
 
 <body>
+    <!-- Set initial value of Gem 1 Guess -->
+    var gem-value-1 = 0;
 
+    <!-- Main hedline -->
     <h1 class="main-hed">Don't Break the Bank!</h1>
-    <div ><img class="gem" src="assets/images/gem1.jpg" alt="Gem One"></div>
+    
+    <!-- Image for Gem 1 -->
+    <div>
+        <img id="button1" class="gem" src="assets/images/gem1.jpg" alt="Gem One">;
+    </div>
+
+
 
 </body>
+
+    <script>
+    
+        $("button1").on("click", function() {
+            alert("test");
+        })
+    
+    </script>
+
+
+
 </html>

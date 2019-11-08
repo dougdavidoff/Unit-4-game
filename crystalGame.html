@@ -38,24 +38,40 @@
 
     <script>
     
-    var random1 = Math.floor(Math.random() * 19) + 1;
+        var random1 = Math.floor(Math.random() * 12) + 1;
 
-    $("#button1").on("click", function() {
+        var random2 = Math.floor(Math.random() * 12) + 1;
+
+        var random3 = Math.floor(Math.random() * 12) + 1;
+
+        var random4 = Math.floor(Math.random() * 12) + 1;
+
+
+
+        $("#button1").on("click", function() {
             alert("Random1 = " + random1);
         })
+
+        $("#button2").on("click", function() {
+            alert("Random2 = " + random2);
+        })
     
-    var random = Math.floor(Math.random() * 19) + 1;
-    var random2;
-    if random === random1 {
-        random2 = Math.floor(Math.random() * 19) + 1;
-    } else {
-        random2 = random;
-    }
+        $("#button3").on("click", function() {
+            alert("Random3 = " + random3);
+        })
 
+        $("#button4").on("click", function() {
+            alert("Random4 = " + random4);
+        })
 
-    $("#button2").on("click", function() {
-        alert("Random2 = " + random2);
-    })
+    // var randomtry = Math.floor(Math.random() * 12) + 1;
+    // var random2;
+    // if randomtry === random1 {
+        // randomtry = Math.floor(Math.random() * 12) + 1;
+        // } else {
+            // random2 = randomtry;
+        // }
+
 
     </script>
 

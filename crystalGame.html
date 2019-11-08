@@ -14,26 +14,49 @@
 
 <body>
     <!-- Set initial value of Gem 1 Guess -->
-    var gem-value-1 = 0;
+   <!-- var gem-value-1 = 0; -->
 
     <!-- Main hedline -->
     <h1 class="main-hed">Don't Break the Bank!</h1>
     
     <!-- Image for Gem 1 -->
     <div>
-        <img id="button1" class="gem" src="assets/images/gem1.jpg" alt="Gem One">;
+        <img id="button1" class="topgem" src="assets/images/gem1.jpg" alt="Gem One">;
+
+        <img id="button2" class="topgem" src="assets/images/gem2.jpg" alt="Gem Two">;
     </div>
 
+    <div>
+       <img id="button3" class="bottomgem" src="assets/images/gem3.jpg" alt="Gem Three">;
+        
+        <img id="button4" class="bottomgem" src="assets/images/gem4.jpg" alt="Gem Four"> 
 
+
+    </div>
 
 </body>
 
     <script>
     
-        $("button1").on("click", function() {
-            alert("test");
+    var random1 = Math.floor(Math.random() * 19) + 1;
+
+    $("#button1").on("click", function() {
+            alert("Random1 = " + random1);
         })
     
+    var random = Math.floor(Math.random() * 19) + 1;
+    var random2;
+    if random === random1 {
+        random2 = Math.floor(Math.random() * 19) + 1;
+    } else {
+        random2 = random;
+    }
+
+
+    $("#button2").on("click", function() {
+        alert("Random2 = " + random2);
+    })
+
     </script>
 
 

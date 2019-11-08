@@ -1,8 +1,16 @@
-.gem {
+.topgem {
     width: 150px;
-    margin-top: 60px;
-    
-} 
+    margin-top: 160px;
+    cursor: pointer;
+}
+
+.bottomgem {
+    width: 150px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
 body {
     background-image: url("https://www.kiplinger.com/slideshow/saving/T005-S001-things-you-ll-regret-keeping-in-a-safe-deposit-box/images/intro.jpg");
     background-size: cover;

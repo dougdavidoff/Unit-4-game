@@ -4,13 +4,14 @@
         // Variables for wins, losses, and ever-changing score for the round
 
         var wins = 0;
+            var winsSpan = $('.wins-score');
         
         var losses = 0;
-        
+            var lossesSpan = $('losses-score');
+
         var roundscore = 0;
 
 
-        // ?????Display number of wins and losses????? //
 
 
         
@@ -117,6 +118,7 @@
             alert("You win. The vault is opened. You may now leave the vault. Or stick around and play again!");
             wins++;
             console.log("Wins = " + wins + "and losses = " + losses);
+            winsScoreSpan.text(wins);
             reset();
         }
 
@@ -125,6 +127,7 @@
             alert("You lose. BOOM! An explosion breaks the bank.");
             losses++;
             console.log("Wins = " + wins + "and losses = " + losses);
+            lossesScoreSpan.text(losses);
             reset();
         }
 

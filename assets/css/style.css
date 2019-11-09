@@ -1,3 +1,11 @@
+.gemwrapper {
+    float: left;
+}
+
+.clear {
+    clear: both
+}
+
 .topgem {
     width: 150px;
     margin-top: 160px;
@@ -27,14 +35,19 @@
 
 }
 
+.instruct-copy {
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
 .scoreboard {
     background: teal;
     color: whitesmoke;
-    position: absolute;
-    margin-top: 10px;
-    margin-left: 50px;
+    float: right;
+    margin-top: 160px;
+    margin-left: 7  50px;
     width: 300px;
     padding: 10px;
+    font-family: 'Oswald', sans-serif;
 }
 
 body {

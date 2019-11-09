@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Darker+Grotesque|Oswald&display=swap" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/javascript/game.js"></script>
     <title>Don't Break The Bank</title>
@@ -21,30 +21,39 @@
     <h1 class="main-hed">Don't Break the Bank!</h1>
     
     <!-- Image for Gem 1 -->
-    <div>
-        <img id="button1" class="topgem" src="assets/images/gem1.jpg" alt="Gem One">;
+    <div class="gemwrapper">
 
-        <img id="button2" class="topgem" src="assets/images/gem2.jpg" alt="Gem Two">;
-    </div>
+        <div>
+            <img id="button1" class="topgem" src="assets/images/gem1.jpg" alt="Gem One">;
 
-    <div>
-       <img id="button3" class="bottomgem" src="assets/images/gem3.jpg" alt="Gem Three">;
+            <img id="button2" class="topgem" src="assets/images/gem2.jpg" alt="Gem Two">;
+        </div>
+
+        <div>
+            <img id="button3" class="bottomgem" src="assets/images/gem3.jpg" alt="Gem Three">;
         
-        <img id="button4" class="bottomgem" src="assets/images/gem4.jpg" alt="Gem Four"> 
+            <img id="button4" class="bottomgem" src="assets/images/gem4.jpg" alt="Gem Four"> 
+        </div>
     </div>
+
 
     <div class="scoreboard">
         <h2>Round message</h2> Round message    
-        <h3>Your Target:</h3> > targetscore
-        <h3>Your score:</h3> roundscore;
+        <h3>Your Target: <span class="target-score"></span></h3>
+        <h3>Your score: <span class="round-score">0</span></h3>
         <h3>Wins:</h3> wins;
         <h3>Losses:</h3> losses;
     </div>
 
+    <div class="clear">
+
+    </div>
+
+
     <div class="instruct-box">
 
         <h2 class="instruct-hed">Instructions</h2>
-        <p class="instruct-copy"><strong>You are president of the bank. You have been locked in the vault.</strong> The only way out is to use a mysterious "crystal lock." You use your presidential key to open a never-before-opened safe deposit box. Inside, you discover four crystals. When you touch a crystal, it reveals a points value assigned to it. There is a target score written inside the box. You must touch the crystals enough times to achieve the target score. This will open the vault. If you exceed the target score, you will lose. An explosive device will blow up the bank. A recommendation: Be careful with your arithmatic!</p>
+        <p class="instruct-copy"><strong>You are president of the bank. You have been locked in the vault.</strong> The only way out is to open the strange "crystal lock." You use your presidential key to unlock a never-before-opened safe deposit box. Inside, you discover four crystals. When you touch a crystal, it reveals a points value assigned to it. There is a target score written on a scrap of paper inside the box. To escape the vault, you must touch the crystals enough times to achieve the target score. But the paper warns that should you exceed the target score, you will lose -- and an explosive device will blow up the bank. So here is a recommendation: Be careful with your arithmatic!</p>
 
     </div>
 </body>

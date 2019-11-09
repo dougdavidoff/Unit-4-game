@@ -16,7 +16,11 @@
         
         // Set random-chosen target score for this round 
         var targetscore = Math.floor(Math.random() * 101) +19;
+            var targetScoreSpan = $('.target-score');
+            var roundScoreSpan = $('.round-score');
+            targetScoreSpan.text(targetscore);
             console.log("Target Score = " + targetscore);
+
 
 
 
@@ -51,6 +55,7 @@
             alert("Random1 = " + random1);
             roundscore = roundscore + random1;
             console.log("Round score so far = " + roundscore);
+            roundScoreSpan.text(roundscore);
                 if(roundscore === targetscore){
                     youwin();
                 } else if(roundscore > targetscore){
@@ -66,7 +71,8 @@
             alert("Random2 = " + random2);
             roundscore = roundscore + random2;
             console.log("Round score so far = " + roundscore);
-                if(roundscore === targetscore){
+            roundScoreSpan.text(roundscore);
+            if(roundscore === targetscore){
                     youwin();
                 } else if(roundscore > targetscore){
                     youlose();
@@ -80,7 +86,8 @@
             alert("Random3 = " + random3);
             roundscore = roundscore + random3;
             console.log("Round score so far = " + roundscore);
-                if(roundscore === targetscore){
+            roundScoreSpan.text(roundscore);
+            if(roundscore === targetscore){
                     youwin();
                 } else if(roundscore > targetscore){
                     youlose();
@@ -94,7 +101,8 @@
             alert("Random4 = " + random4);
             roundscore = roundscore + random4;
             console.log("Round score so far = " + roundscore);
-                if(roundscore === targetscore){
+            roundScoreSpan.text(roundscore);
+            if(roundscore === targetscore){
                     youwin();
                 } else if(roundscore > targetscore){
                     youlose();

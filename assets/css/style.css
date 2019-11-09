@@ -10,6 +10,32 @@
     cursor: pointer;
 }
 
+.instruct-box {
+    background: teal;
+    color: whitesmoke;
+    margin-top: 100px;
+    margin-left: 50px;
+    width: 1250px;
+    padding: 10px;
+}
+
+.instruct-hed {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 48pt;
+    text-align: left;
+    padding: 5px;
+
+}
+
+.scoreboard {
+    background: teal;
+    color: whitesmoke;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 300px;
+    padding: 10px;
+}
 
 body {
     background-image: url("https://www.kiplinger.com/slideshow/saving/T005-S001-things-you-ll-regret-keeping-in-a-safe-deposit-box/images/intro.jpg");
@@ -17,6 +43,7 @@ body {
 }
 .main-hed {
     font-family: 'Abril Fatface', cursive;
-    font-size: 72pt;
+    font-size: 86pt;
     text-align: center;
+    color: teal;
 }

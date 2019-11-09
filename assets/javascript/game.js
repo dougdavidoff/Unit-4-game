@@ -11,6 +11,9 @@
 
         var roundscore = 0;
 
+        var message = "Let's Begin Play"
+            var messageSpan = $('new-message');
+
 
 
 
@@ -53,64 +56,44 @@
         // Crystal click operations
 
         $("#button1").on("click", function() {
-            alert("Random1 = " + random1);
             roundscore = roundscore + random1;
-            console.log("Round score so far = " + roundscore);
             roundScoreSpan.text(roundscore);
                 if(roundscore === targetscore){
                     youwin();
                 } else if(roundscore > targetscore){
                     youlose();
-                } else {
-                    alert("You're doing fine. Keep touching the crystals.");
-                    console.log("Game continues to next click on a crystal");
-                }
+                } 
             })
 
 
         $("#button2").on("click", function() {
-            alert("Random2 = " + random2);
             roundscore = roundscore + random2;
-            console.log("Round score so far = " + roundscore);
             roundScoreSpan.text(roundscore);
             if(roundscore === targetscore){
                     youwin();
                 } else if(roundscore > targetscore){
                     youlose();
-                } else {
-                    alert("You're doing fine. Keep touching the crystals.");
-                    console.log("Game continues to next click on a crystal");
-                }
+                } 
             })
     
         $("#button3").on("click", function() {
-            alert("Random3 = " + random3);
             roundscore = roundscore + random3;
-            console.log("Round score so far = " + roundscore);
             roundScoreSpan.text(roundscore);
             if(roundscore === targetscore){
                     youwin();
                 } else if(roundscore > targetscore){
                     youlose();
-                } else {
-                    alert("You're doing fine. Keep touching the crystals.");
-                    console.log("Game continues to next click on a crystal");
-                }
+                } 
             })
 
         $("#button4").on("click", function() {
-            alert("Random4 = " + random4);
             roundscore = roundscore + random4;
-            console.log("Round score so far = " + roundscore);
             roundScoreSpan.text(roundscore);
             if(roundscore === targetscore){
                     youwin();
                 } else if(roundscore > targetscore){
                     youlose();
-                } else {
-                    alert("You're doing fine. Keep touching the crystals.");
-                    console.log("Game continues to next click on a crystal");
-                }
+                } 
             })
 
         // Winning function

@@ -29,7 +29,7 @@
 
 .instruct-hed {
     font-family: 'Abril Fatface', cursive;
-    font-size: 48pt;
+    font-size: 36pt;
     text-align: left;
     padding: 5px;
 
@@ -37,6 +37,7 @@
 
 .instruct-copy {
     font-family: 'Darker Grotesque', sans-serif;
+    font-size: 16pt;
 }
 
 .scoreboard {

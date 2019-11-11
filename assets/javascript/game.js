@@ -101,7 +101,7 @@
             alert("You win. The vault is opened. You may now leave the vault. Or stick around and play again!");
             wins++;
             console.log("Wins = " + wins + "and losses = " + losses);
-            winsScoreSpan.text(wins);
+            winsSpan.text(wins);
             reset();
         }
 
@@ -110,13 +110,13 @@
             alert("You lose. BOOM! An explosion breaks the bank.");
             losses++;
             console.log("Wins = " + wins + "and losses = " + losses);
-            lossesScoreSpan.text(losses);
+            lossesSpan.text(losses);
             reset();
         }
 
         //Gamne reset function
         function reset(){
-            targetscore=Math.floor(Math.random() * 101) + 19;
+            targetscore=Math.floor(Math.random() * 101) + 19;   
             console.log("New target is " + targetscore);
             random1=Math.floor(Math.random() * 11) + 1;
             random2=Math.floor(Math.random() * 11) + 1;

@@ -5,16 +5,18 @@
 
         var wins = 0;
             var winsSpan = $('.wins-score');
+            console.log(winsSpan)
         
         var losses = 0;
-            var lossesSpan = $('losses-score');
+            var lossesSpan = $('.losses-score');
+            console.log(lossesSpan)
 
         var roundscore = 0;
 
         var message = "Let's Begin Play"
-            var messageSpan = $('new-message');
+            var messageSpan = $('.new-message');
 
-
+        messageSpan.text(message)
 
 
         
@@ -98,7 +100,8 @@
 
         // Winning function
         function youwin(){
-            alert("You win. The vault is opened. You may now leave the vault. Or stick around and play again!");
+            message = "You win. The vault is opened. You may now leave the vault. Or stick around and play again!";
+            messageSpan.text(message)
             wins++;
             console.log("Wins = " + wins + "and losses = " + losses);
             winsSpan.text(wins);
@@ -107,8 +110,9 @@
 
         // Losing function
         function youlose(){
-            alert("You lose. BOOM! An explosion breaks the bank.");
+            message = "You lose. BOOM! An explosion breaks the bank.";
             losses++;
+            messageSpan.text(message)
             console.log("Wins = " + wins + "and losses = " + losses);
             lossesSpan.text(losses);
             reset();
@@ -122,7 +126,9 @@
             random2=Math.floor(Math.random() * 11) + 1;
             random3=Math.floor(Math.random() * 11) + 1;
             random4=Math.floor(Math.random() * 11) + 1 ;
-            roundscore = 0;            
+            roundscore = 0; 
+            targetScoreSpan.text(targetscore);
+            roundScoreSpan.text(0);         
         }
 
     });  

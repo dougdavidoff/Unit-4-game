@@ -102,6 +102,8 @@
         function youwin(){
             message = "You win. The vault is opened. You may now leave the vault. Or stick around and play again!";
             messageSpan.text(message)
+            message = "Let's play again."
+            setTimeout(function(){messageSpan.text(message)}, 5000);
             wins++;
             console.log("Wins = " + wins + "and losses = " + losses);
             winsSpan.text(wins);
@@ -111,14 +113,16 @@
         // Losing function
         function youlose(){
             message = "You lose. BOOM! An explosion breaks the bank.";
-            losses++;
             messageSpan.text(message)
+            message = "Let's play again."
+            setTimeout(function(){messageSpan.text(message)}, 5000);
+            losses++;
             console.log("Wins = " + wins + "and losses = " + losses);
             lossesSpan.text(losses);
             reset();
         }
 
-        //Gamne reset function
+        //Game reset function
         function reset(){
             targetscore=Math.floor(Math.random() * 101) + 19;   
             console.log("New target is " + targetscore);
